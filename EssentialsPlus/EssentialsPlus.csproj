@@ -5,12 +5,12 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.10" />
-    <PackageReference Include="MySql.Data" Version="8.0.30" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.4" />
+    <PackageReference Include="MySql.Data" Version="9.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="TShock" Version="5.0.0-beta" />
-    <PackageReference Include="TSAPI" Version="5.0.0-beta" />
-    <PackageReference Include="OTAPI.Upcoming" Version="3.1.8-alpha" />
+    <PackageReference Include="TShock" Version="5.2.4" />
+    <PackageReference Include="TSAPI" Version="5.2.1" />
+    <PackageReference Include="OTAPI.Upcoming" Version="3.1.20" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
