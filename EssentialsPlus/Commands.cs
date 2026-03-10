@@ -15,6 +15,7 @@ using Terraria.Localization;
 using TShockAPI;
 using TShockAPI.DB;
 using TShockAPI.Localization;
+using StringExtensions = EssentialsPlus.Extensions.StringExtensions;
 
 namespace EssentialsPlus
 {

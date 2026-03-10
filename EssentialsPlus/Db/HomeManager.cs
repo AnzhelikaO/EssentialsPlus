@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using Terraria;
 using TShockAPI;
 using TShockAPI.DB;
+using TShockAPI.DB.Queries;
 
 namespace EssentialsPlus.Db
 {
@@ -20,7 +21,7 @@ namespace EssentialsPlus.Db
 			this.db = db;
 
 			var sqlCreator = new SqlTableCreator(db,
-				db.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder) new SqliteQueryCreator() : new MysqlQueryCreator());
+				db.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder) new SqliteQueryBuilder() : new MysqlQueryBuilder());
 			sqlCreator.EnsureTableStructure(new SqlTable("Homes",
 				new SqlColumn("ID", MySqlDbType.Int32) {AutoIncrement = true, Primary = true},
 				new SqlColumn("UserID", MySqlDbType.Int32),
